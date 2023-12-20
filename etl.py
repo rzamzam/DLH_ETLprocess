@@ -40,9 +40,9 @@ def load_data_from_sql_server_to_postgres(sql_server_conn_string, postgres_conn_
 
 # Running The Code
 sql_server_conn_string = "DRIVER={SQL Server Native Client 11.0};SERVER=LAPTOP-S05RS544\\SQLEXPRESS;DATABASE=AdventureWorks2012;Trusted_Connection=yes;"
-postgres_conn_string = "dbname=staging2 user=postgres password=rayhanzam25 host=localhost"
-source_table = "Sales.SalesOrderDetail"
-target_table = "diminvoice"
-columns_to_select = ["SalesOrderDetailID", "SalesOrderID", "LineTotal", "OrderQty"]  # Add the columns you want to select
+postgres_conn_string = "dbname=staging2 user=postgres password= host=localhost"
+source_table = ""
+target_table = ""
+columns_to_select = [""]  # Add the columns you want to select
 
 load_data_from_sql_server_to_postgres(sql_server_conn_string, postgres_conn_string, source_table, target_table, columns_to_select)
