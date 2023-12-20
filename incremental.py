@@ -21,7 +21,7 @@ def insert_new_territory(conn, territory_id, territory_name):
         cursor.close()
 
 # Example usage
-postgres_conn_string = "dbname=staging2 user=postgres password=rayhanzam25 host=localhost"
+postgres_conn_string = "dbname=staging2 user=postgres password= host=localhost"
 
 # Connect to PostgreSQL
 conn = psycopg2.connect(postgres_conn_string)
